@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script src="/robibn/mercado.js"></script>
+<h1>tabla</h1>
+<style>
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    td,
+    th,
+    tr {
+        border: solid 1px black;
+
+    }
+
+    th {
+        color: firebrick;
+    }
+</style>
+<fieldset>
+<table>
+    <tr>
+        <th> primer nombre</th>
+        <th> segundo nombre</th>
+        <th> primer apellido</th>
+        <th>segundo apellido</th>
+        <th>edad </th>
+    </tr>
+    <tr>
+        <td>robin</td>
+        <td>son</td>
+        <td>truque</td>
+        <td>truque</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>liliana</td>
+        <td>son</td>
+        <td>perez</td>
+        <td>velencia</td>
+        <td>38</td>
+
+    <tr>
+        <td>jhonatan</td>
+        <td>son</td>
+        <td>truque</td>
+        <td>valencia</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>luis</td>
+        <td>fermando</td>
+        <td>truque</td>
+        <td>fajardo</td>
+        <td>42</td>
+    </tr>
+
+
+</table>
+</fieldset>
+<h1>tabla_2</h1>
+<style>
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    td,
+    th,
+    tr {
+        border: solid 1px black;
+
+    }
+
+    th {
+        color: firebrick;
+    }
+ 
+</style>
+<fieldset>
+<table>
+    <tr>
+
+        <th rowspan="2">tabla avanzada </th>
+        <th colspan="2">cabecera multiples columnas</th>
+    </tr>
+    <tr>
+        <th> primera col. cab</th>
+        <th>segunda col.cab.</th>
+    </tr>
+
+    <tr>
+        <td>fila 1</td>
+        <td>fila 1 columna 1</td>
+        <td>fila 1 columna 2</td>
+    </tr>
+    <tr>
+        <td>fila 2</td>
+        <td>fila 2 columna 1</td>
+        <td>fila 2 columna 2</td>
+
+    <tr>
+
+    </tr>
+    <tr>
+        <td colspan="4">pies pagina</td>
+    </tr>
+   
+</table>
+</fieldset>
+<h1>tabla_3</h1>
+<fieldset>
+<table>
+    <tr>
+        <th>celda</th>
+        <th colspan="4">celda</th>
+        <th>celda</th>
+    </tr>
+    <tr>
+        <td rowspan="4">celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td rowspan="4">celda</td>
+    </tr>
+
+    <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tr>
+    <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tr>
+    <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tr>
+
+    <tr>
+        <td rowspan="4">celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td rowspan="4"></td>
+        <td rowspan="4">celda</td>
+    </tr>
+
+    <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tr>
+    <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tr>
+    <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tr>
+
+</table>
+</fieldset>
+<h1>tabla_4</h1>
+<fieldset>
+<table>
+    <tr>
+        <th>celda</th>
+        <th colspan="4">celda</th>
+        <th >celda</th>
+    </tr>
+    <tr>
+        <td>celda</td>
+        <td colspan="4">celda</td>
+        <td rowspan="2">celda</td>
+      
+    </tr>
+
+    <tr>
+        <td rowspan="3">celda</td>
+        <td colspan="2">celda</td>
+        <td colspan="2">celda</td>
+       
+    </tr>
+    <tr>
+        <td colspan="5">celda</td>
+        
+    </tr>
+    <tr>
+        <td colspan="5">celda</td>
+        
+    </tr>
+  
+
+</table>
+</fieldset>
+
+<h1> formulario_eje </h1>
+<fieldset>
+<form action="ejemplo.php" method="get">
+    <p>Nombre: <input type="text" name="nombre" size="40"></p>
+    <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+    <p>Sexo:
+        <input type="radio" name="hm" value="h"> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </p>
+</form>
+<!-- <h2>formulario_eje_1</h2>
+<p>edad: <input type="number" value="edad" min="0"   ></p>
+<h2>jsgh</h2> <form>
+    <select name=“mascotas”>
+        <optgroup label=“4 patas”>
+            <option value=“perro”>Perro</option>
+            <option value=“gato”>Gato</option>
+            <option value=“hamster”>Hamster</option>
+            <option value=“conejo”>Conejo</option>
+       </optgroup>
+
+</form> -->
+</fieldset>
+<form>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+            <label for=“name”>Nombre</label>
+            <input type=“text” id=“name”>
+        </div>
+        <div>
+            <label for=“surname”>Apeññodps</label>
+            <input type=“text” id=“surname”>
+        </div>
+    </fieldset>
+</form>
+<h1>formulario_1</h1>
+<fieldset>
+
+    <form action="formuliario gut"></form>
+    <p>Nombre: <input type="text" value="" size="40"></p>
+    <p>apellido<input type="text" value="" size="40"></p>
+    <p>edad<input type="text" value="" size="40"></p>
+    <p>genero</p>
+    <input type="radio" mane="hm" value="h">mujer
+    <input type="radio" name="hm" value="h"> Hombre
+    <section>
+        <p>nivel de estudio</p>
+        <input type="list" list="estudio">
+        <datalist id="estudio">
+            <option value="bajo">bajo</option>
+            <option value="medio"> medio</option>
+            <option value="alto">alto</option>
+        </datalist>
+        <p>usuario: <input type="none" value="" size="40"></p>
+        <p>usuario: <input type="text" value="" size="40"></p>
+        <p>usuario: <input type="text" value="" size="40"></p>
+        <p>contraseña: <input type="text" value="" size="40"></p>
+        <p>confirmacion de contraseña: <input type="text" value="" size="40"></p>
+        <input type="button" value="enviar">
+        </select>
+
+        </form>
+</fieldset>
+
+</html>
